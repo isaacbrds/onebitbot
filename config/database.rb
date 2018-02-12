@@ -5,7 +5,8 @@ configure :test do
      database: 'onebitbot_test',
      pool: 5,
      username: 'postgres',
-     host: 'postgres'
+     host: 'localhost',
+     password: '123456'
    }
 end
 
@@ -16,7 +17,8 @@ configure :development do
    database: 'onebitbot_development',
    pool: 5,
    username: 'postgres',
-   host: 'postgres'
+   host: 'localhost',
+   password: '123456'
  }
 end
 
@@ -27,6 +29,7 @@ configure :production do
      database: 'onebitbot_production',
      pool: 5,
      username: 'postgres',
-     host: 'postgres'
+     host: 'localhost',
+     password: '123456'
    }
 end
